@@ -4,7 +4,7 @@ body {
 }
 
 body {
-  display: flex;
+  /*display: flex;*/
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -32,4 +32,8 @@ body {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+.separacion {
+  height: 0.5rem;
+  border-width: 1px 0;
 }

@@ -7,7 +7,7 @@
         <meta name="keywords" content="bootstrap, Gimnasio, Mascotas, Patitas Fitness, aprendisaje, html"/>
         <!--<meta name="author" content="">
         <meta name="generator" content="Hugo 0.88.1"> -->
-        <link rel="shortcut icon" href="assets/img/favicon.png"> <!-- con esto ponemos un icono a la pagina-->
+        <link rel="shortcut icon" href="assets/img/favicon-sin-fondo.png"> <!-- con esto ponemos un icono a la pagina-->
             <title> Patitas Fitness Registrarse</title>
             <link rel="stylesheet" href="scss/estilos.css"/> 
 
@@ -33,50 +33,131 @@
         <link href="assets/css/login.css" rel="stylesheet">
     </head>
 
-    <body>
+    <body class="text-center">
 
         <main class="form-login">
             <!-- Inicio del formulario-->
-            <form class="row g-3 needs-validation" novalidate>
-                <div class="col-md-4">
-                <label for="validationCustom01" class="form-label">Nombres</label>
-                <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-                <div class="valid-feedback">
-                    Looks good!
-                </div>
-                </div>
-                <div class="col-md-4">
-                <label for="validationCustom02" class="form-label">Apellidos</label>
-                <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-                <div class="valid-feedback">
-                    Looks good!
-                </div>
+            <form>
+                <img class="mb-4" src="assets/img/logo-sin-fondo.png" alt="" width="200" height="187" >
+
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="NOMBRE" required>
+                    <label for="floatingInput">Nombre</label>
+                    <div class="invalid-feedback">
+                        ¿Cómo te llamas?
+                  </div>
+
+                  <div class="separacion"></div>
+
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Apellidos" required>
+                    <label for="floatingInput">Apellido</label>
+                  </div>
+
+                  <div class="separacion"></div>
+
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="nombre@ejemplo.com" required>
+                    <label for="floatingInput">Correo electrónico</label>
                 </div>
 
-                <div class="col-md-6">
-                <label for="validationCustom03" class="form-label">City</label>
-                <input type="text" class="form-control" id="validationCustom03" required>
-                <div class="invalid-feedback">
-                    Please provide a valid city.
+                <div class="separacion"></div>
+
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="********">
+                    <label for="floatingPassword">Contraseña</label>
+                  </div>
+
+                  <!--Seleccion de la fecha de nacimiento dia-->
+                  <h6>fecha de nacimiento</h6>
+                <div class="row">
+                    <div class="col">
+                        <select class="form-select" required>
+                            <option value="1" selected="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <select class="form-select" required>
+                            <option value="1" selected="1">ene</option>
+                            <option value="2">feb</option>
+                            <option value="3">mar</option>
+                            <option value="4">abr</option>
+                            <option value="5">may</option>
+                            <option value="6">jun</option>
+                            <option value="7">jul</option>
+                            <option value="8">ago</option>
+                            <option value="9">sep</option>
+                            <option value="10">oct</option>
+                            <option value="11">nov</option>
+                            <option value="12">dic</option>
+                        </select>
+                    </div>
+
+                    <div class="col">
+                        <select class="form-select" required>
+                            <option value="1" selected="1">2000</option>
+                            <option value="2">2022</option>
+                            <option value="3">2021</option>
+                            <option value="4">2020</option>
+                            <option value="5">2019</option>
+                            <option value="6">2018</option>
+                            <option value="7">2017</option>
+                            <option value="8">2016</option>
+                            <option value="9">2015</option>
+                            <option value="10">2014</option>
+                            <option value="11">2013</option>
+                            <option value="12">2012</option>
+                        </select>
+                    </div>
                 </div>
-                </div>
-                <div class="col-md-3">
-                <label for="validationCustom04" class="form-label">State</label>
-                <select class="form-select" id="validationCustom04" required>
-                    <option selected disabled value="">Choose...</option>
-                    <option>...</option>
-                </select>
-                <div class="invalid-feedback">
-                    Please select a valid state.
-                </div>
-                </div>
-                <div class="col-md-3">
+
+                <div class="col-md-5">
                 <label for="validationCustom05" class="form-label">Zip</label>
                 <input type="text" class="form-control" id="validationCustom05" required>
                 <div class="invalid-feedback">
-                    Please provide a valid zip.
+                    hola.
                 </div>
                 </div>
+
+                <div class="row">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                    </div>
+                  </div>
+                  
                 <div class="col-12">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
@@ -93,6 +174,18 @@
                     <p class="text-center" style="margin-bottom:0rem">¿Ya tienes una cuenta? inicia sesión</p>
                     <a class="w-100 btn btn-lg btn-secondary" href="https://www.youtube.com/watch?v=4-UbHw8eDzM" role="button">Iniciar sesión</a>
             </form>
+
+            <div class="container">
+                <footer class="py-3 my-4">
+                  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Inicio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">lorem</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">####</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">####</a></li>
+                  </ul>
+                  <p class="text-center text-muted">&copy; 2022 Patitas Fitness</p>
+                </footer>
+            </div>
 
         </main>
 
