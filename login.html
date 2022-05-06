@@ -1,62 +1,72 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Inicio de sesión en patitas fitnes">
-        <meta name="keywords" content="bootstrap, Gimnasio, Mascotas, Patitas Fitness, aprendisaje, html"/>
-        <!--<meta name="author" content="">
-        <meta name="generator" content="Hugo 0.88.1"> -->
-        <link rel="shortcut icon" href="assets/img/favicon-sin-fondo.png"> <!-- con esto ponemos un icono a la pagina-->
-            <title> Patitas Fitness Registrarse</title>
-            <link rel="stylesheet" href="scss/estilos.css"/> 
 
-        <!-- Bootstrap core CSS -->
-        <link href="assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-        
-        <style>
-            .bd-placeholder-img {
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Inicio de sesión en patitas fitnes">
+    <meta name="keywords" content="bootstrap, Gimnasio, Mascotas, Patitas Fitness, aprendisaje, html" />
+    <!--<meta name="author" content="">
+        <meta name="generator" content="Hugo 0.88.1"> -->
+    <link rel="shortcut icon" href="assets/img/favicon-sin-fondo.png">
+    <!-- con esto ponemos un icono a la pagina-->
+    <title> Patitas Fitness Registrarse</title>
+    <link rel="stylesheet" href="scss/estilos.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Water+Brush&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
             font-size: 1.125rem;
             text-anchor: middle;
             -webkit-user-select: none;
             -moz-user-select: none;
             user-select: none;
-            }
-    
-            @media (min-width: 768px) {
+        }
+        
+        @media (min-width: 768px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
             }
-            }
-        </style>
+        }
+    </style>
 
-        <link href="assets/css/login.css" rel="stylesheet">
-    </head>
+    <link href="assets/css/login.css" rel="stylesheet">
+</head>
 
-    <body class="text-center">
+<body class="text-center">
 
-        <main class="form-login">
-            <!-- Inicio del formulario-->
-            <form>
-                <img class="mb-4" src="assets/img/logo-sin-fondo.png" alt="" width="200" height="187" >
+    <main class="form-login">
+        <!-- Inicio del formulario-->
+        <form>
+            <img class="mb-4" src="assets/img/logo-sin-fondo.png" alt="" width="200" height="187">
+
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInput" placeholder="NOMBRE" required>
+                <label for="floatingInput">Nombre</label>
+
+                <div class="invalid-feedback">
+                    ¿Cómo te llamas, jeje?
+                </div>
+
+                <div class="separacion"></div>
 
                 <div class="form-floating">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="NOMBRE" required>
-                    <label for="floatingInput">Nombre</label>
-                    <div class="invalid-feedback">
-                        ¿Cómo te llamas?
-                  </div>
-
-                  <div class="separacion"></div>
-
-                  <div class="form-floating">
                     <input type="text" class="form-control" id="floatingInput" placeholder="Apellidos" required>
                     <label for="floatingInput">Apellido</label>
-                  </div>
+                </div>
 
-                  <div class="separacion"></div>
+                <div class="separacion"></div>
 
-                  <div class="form-floating">
+                <div class="form-floating">
                     <input type="email" class="form-control" id="floatingInput" placeholder="nombre@ejemplo.com" required>
                     <label for="floatingInput">Correo electrónico</label>
                 </div>
@@ -64,12 +74,17 @@
                 <div class="separacion"></div>
 
                 <div class="form-floating">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="********">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="********" required>
                     <label for="floatingPassword">Contraseña</label>
-                  </div>
+                </div>
+                <div class="separacion"></div>
 
-                  <!--Seleccion de la fecha de nacimiento dia-->
-                  <h6>fecha de nacimiento</h6>
+                <!--Seleccion de la fecha de nacimiento dia-->
+
+                <div class="encabezado">
+                    <h6 float="left">Fecha de nacimiento:</h6>
+                </div>
+
                 <div class="row">
                     <div class="col">
                         <select class="form-select" required>
@@ -106,6 +121,7 @@
                             <option value="31">31</option>
                         </select>
                     </div>
+                    <!--Seleccion de la fecha de nacimiento mes-->
                     <div class="col">
                         <select class="form-select" required>
                             <option value="1" selected="1">ene</option>
@@ -122,7 +138,7 @@
                             <option value="12">dic</option>
                         </select>
                     </div>
-
+                    <!--Seleccion de la fecha de nacimiento año-->
                     <div class="col">
                         <select class="form-select" required>
                             <option value="1" selected="1">2000</option>
@@ -137,59 +153,52 @@
                             <option value="10">2014</option>
                             <option value="11">2013</option>
                             <option value="12">2012</option>
+                            <option value="13">2011</option>
                         </select>
                     </div>
                 </div>
 
-                <div class="col-md-5">
-                <label for="validationCustom05" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="validationCustom05" required>
-                <div class="invalid-feedback">
-                    hola.
-                </div>
-                </div>
+                <div class="separacion"></div>
+                <div class="separacion"></div>
 
-                <div class="row">
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-                    </div>
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-                    </div>
-                  </div>
-                  
+
+
                 <div class="col-12">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                    <label class="form-check-label" for="invalidCheck">
-                    Agree to terms and conditions
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                    Acepto los términos y condiciones
                     </label>
-                    <div class="invalid-feedback">
-                    You must agree before submitting.
+                        <div class="invalid-feedback">
+                            Debes aceptar los términos y condiciones.
+                        </div>
                     </div>
                 </div>
-                </div>
-                
-                    <button class="w-100 btn btn-lg btn-primary" type="submit">Registrarse</button> 
-                    <p class="text-center" style="margin-bottom:0rem">¿Ya tienes una cuenta? inicia sesión</p>
-                    <a class="w-100 btn btn-lg btn-secondary" href="https://www.youtube.com/watch?v=4-UbHw8eDzM" role="button">Iniciar sesión</a>
-            </form>
 
-            <div class="container">
-                <footer class="py-3 my-4">
-                  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Inicio</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">lorem</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">####</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">####</a></li>
-                  </ul>
-                  <p class="text-center text-muted">&copy; 2022 Patitas Fitness</p>
-                </footer>
-            </div>
+                <button class="w-100 btn btn-lg btn-primary" type="submit">Registrarse</button>
+                <div class="separacion"></div>
+                <p class="text-center" style="margin-bottom:0rem">¿Ya tienes una cuenta? Inicia sesión</p>
 
-        </main>
+                <a class="w-100 btn btn-lg btn-secondary" href="https://www.youtube.com/watch?v=4-UbHw8eDzM" role="button">Iniciar sesión</a>
 
-        <script src="https://code.jquery.com/jquery-latest.js"></script>
-        <script src="assets/bootstrap/dist/js/bootstrap.min.js" ></script>
-    </body>
+        </form>
+
+    </main>
+
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Inicio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Promociones</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Catálogo</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Ofertas</a></li>
+            </ul>
+            <p class="text-center text-muted">&copy; 2022 Patitas Fitness</p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="assets/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
 </html>
