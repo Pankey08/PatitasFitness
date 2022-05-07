@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+STATICFILES_DIRS=['C:/Users/52556/OneDrive/Documentos/DesarrolloWeb/PatitasFitness/templates']
 
 # Application definition
 

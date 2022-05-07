@@ -1,17 +1,21 @@
 <!doctype html>
+{% load static %}
+
 <html lang="en">
 
 <head>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Inicio de sesión en patitas fitnes">
     <meta name="keywords" content="bootstrap, Gimnasio, Mascotas, Patitas Fitness, aprendisaje, html" />
     <!--<meta name="author" content="">
         <meta name="generator" content="Hugo 0.88.1"> -->
-    <link rel="shortcut icon" href="assets/img/favicon-sin-fondo.png">
+    <link rel="shortcut icon" href="{% static 'assets/img/favicon-sin-fondo.png' %}">
+    
     <!-- con esto ponemos un icono a la pagina-->
     <title> Patitas Fitness Registrarse</title>
-    <link rel="stylesheet" href="scss/estilos.css" />
+    <link rel="stylesheet" href="{% static 'assets/scss/estilos.css' %}" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,8 +25,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
-    <link href="assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="{% static 'assets/bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -39,22 +42,23 @@
         }
     </style>
 
-    <link href="assets/css/login.css" rel="stylesheet">
+    <link href="{% static 'assets/css/login.css' %}" rel="stylesheet">
 </head>
 
 <body class="text-center">
 
     <main class="form-login">
         <!-- Inicio del formulario-->
+
         <form>
-            <img class="mb-4" src="assets/img/logo-sin-fondo.png" alt="" width="200" height="187">
+            <img class="mb-4" src="{% static 'assets/img/logo-sin-fondo.png' %}" alt="" width="200" height="187">
 
             <div class="form-floating">
                 <input type="text" class="form-control" id="floatingInput" placeholder="NOMBRE" required>
                 <label for="floatingInput">Nombre</label>
 
                 <div class="invalid-feedback">
-                    ¿Cómo te llamas, jeje?
+                    ¿Cómo te llamas?
                 </div>
 
                 <div class="separacion"></div>
