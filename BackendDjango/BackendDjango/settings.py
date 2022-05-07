@@ -54,7 +54,7 @@ ROOT_URLCONF = 'BackendDjango.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['C:/Users/52556/OneDrive/Documentos/DesarrolloWeb/PatitasFitness/templates'], #Ruta de carpeta donde están los html que usaremos
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
