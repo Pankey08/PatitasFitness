@@ -4,5 +4,5 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.shortcuts import render
 
-def create(request):
-    return render(request, 'login.html')
+def registro(request):
+    return render(request, 'registro.html')

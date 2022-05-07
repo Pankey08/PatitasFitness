@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from crud.views import create
+from crud.views import registro
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('create/', create),
+    path('registro/', registro),
 ]
