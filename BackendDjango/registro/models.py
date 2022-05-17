@@ -1,4 +1,8 @@
 from django.db import models
+import psycopg2 as Database
+
+# Create your models here.
+# -- coding: UTF8 --
 
 # Create your models here.
 
